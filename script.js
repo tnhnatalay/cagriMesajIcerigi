@@ -1,16 +1,19 @@
 let hr = document.querySelector('#hr');
 let md = document.querySelector('#mn');
 let sc = document.querySelector('#sc');
+let msc = document.querySelector('#msc');
 
 setInterval(() =>{
     let day = new Date();
     let hh = day.getHours() * 30;
     let mm = day.getMinutes() * 6;
     let ss = day.getSeconds() * 6;
+    let ms = day.getMilliseconds()/2.8;
     
     hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
-    mn.style.transform = `rotateZ(${mm}deg)`;
-    sc.style.transform = `rotateZ(${ss}deg)`;
+    mn.style.transform = `rotateZ(${mm+(ss/60)}deg)`;
+    sc.style.transform = `rotateZ(${ss+(ms/60)}deg)`;
+    msc.style.transform = `rotateZ(${ms}deg)`;
 
     let hours = document.getElementById('hours');
     let minutes = document.getElementById('minutes');
