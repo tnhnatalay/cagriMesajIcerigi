@@ -1,8 +1,13 @@
+<div align="center">
+
 # Analog Clock
 ## Screen Shots
 #
+## latest version
+![](images/screenShot2.png)
+#
+## old version
 ![](images/screenShot1.png)
-<div align="center">
 
 # 
 ## [Github Profil](https://github.com/tnhnatalay)
