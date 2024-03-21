@@ -15,6 +15,12 @@
     <br>
     <textarea id="metin3" style="height: 150px; width: 250px;">Merhaba, &#10; &#13;Sizi aradım ancak ulaşamadım. &#10; &#13;Müsait olduğunuzda 0(216) 412 6565 -100 numaralı hattan bana ulaşabilirsiniz. &#10; &#13;İyi çalışmalar.</textarea>
     <button onclick="Copy('metin3')">Copy</button> 
-    <script src="index.js"></script>
+    <script>
+        function Copy(a) {
+    var metin = document.getElementById(a);
+    metin.select();
+    document.execCommand("copy");
+}
+    </script>
 </body>
 </html>
