@@ -1,38 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Çağrı Mesaj İçeriği</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
 </head>
 <body>
-
-<p>Merhaba,</p>
-</br>
-<p>Evrakta düzenleme yapıldı.</p>
-<p>Kontrol edebilirsiniz.</p>
-</br>
-<p>İyi çalışmalar.</p>
-
-</br>
-</br>
-
-<p>Merhaba,</p>
-</br>
-<p>? adında evrak sisteminize eklenmiştir.</p>
-<p>Yetki adımları aşağıdaki gibidir.</p>
-</br>
-<p>İyi çalışmalar.</p>
-<p></p>
-
-</br>
-</br>
-
-<p>Merhaba,</p>
-</br>
-<p>Sizi aradım ancak ulaşamadım.</p>
-<p>Müsait olduğunuzda 0(216) 412 6565 -100 numaralı hattan bana ulaşabilirsiniz.</p>
-</br>
-<p>İyi çalışmalar.</p>
-<p></p>
-
+    <textarea id="metin" style="height: 150px; width: 250px;">Merhaba, &#10; &#13;Evrakta düzenleme yapıldı. &#10; &#13;Kontrol edebilirsiniz.  &#10; &#13;İyi çalışmalar.</textarea>
+    <button onclick="Copy('metin')" style="align-items: center;">Copy</button> 
+    <br>
+    <textarea id="metin2" style="height: 150px; width: 250px;">Merhaba, &#10; &#13;? adında evrak sisteminize eklenmiştir.  &#10; &#13;Yetki adımları aşağıdaki gibidir. &#10; &#13;İyi çalışmalar.</textarea>
+    <button onclick="Copy('metin2')">Copy</button> 
+    <br>
+    <textarea id="metin3" style="height: 150px; width: 250px;">Merhaba, &#10; &#13;Sizi aradım ancak ulaşamadım. &#10; &#13;Müsait olduğunuzda 0(216) 412 6565 -100 numaralı hattan bana ulaşabilirsiniz. &#10; &#13;İyi çalışmalar.</textarea>
+    <button onclick="Copy('metin3')">Copy</button> 
+    <script src="index.js"></script>
 </body>
 </html>
